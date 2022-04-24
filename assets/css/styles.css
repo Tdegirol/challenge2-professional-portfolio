@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color:slategray;
+    background-color:var(--gray);
 }
 
 /*Header*/
@@ -20,15 +20,16 @@ header{
 }
 
 header h1{
-    color: slategray;
+    color: var(--gray);
     display: inline;
     margin-left: 10px;
 }
 
 header a{
     font-size:larger;
-    color: orange;
-    text-decoration: wavy;
+    font-weight:bolder;
+    color: var(--gray);
+    text-decoration: none;
 }
 
 header nav{
@@ -55,19 +56,28 @@ section{
 }
 
 /*About me*/
-.about{
-    
 
+.about{
+    display:flex;
+    background-image: url('../images/bali.jpg');
+    background-size:cover;
+    background-position-y:center;
+
+}
+.about img{
+    display:flex;
+    width: 200px;
 }
 /*projects*/
 .projects{
     border: 5px solid black;
     border-color:black;
+    display: flex;
 }
+
 .projects img{
     width: 300px;
     margin-bottom: 50px;
-
 }
 
 /*footer*/
