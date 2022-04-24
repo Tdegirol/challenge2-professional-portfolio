@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+header{
+    background-color: rgb(0, 0, 110);
+}
+
+header h1{
+    color: slategray;
+    display: inline
+}
+
+header a{
+    font-size:larger;
+    color: orange;
+    text-decoration: wavy;
+}
+
+header nav{
+    margin-top: 15px;
+    float:right
+}
+
+h1{
+    font-size: 50px;
+    font-family: fantasy;
+    font-weight:lighter
+
+}
+header nav ul li{
+    display:inline;
+}
+header nav ul li a{
+    margin: 10px;
+}
+
+body{
+    background-color:slategray;
+}
