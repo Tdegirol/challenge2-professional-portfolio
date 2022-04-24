@@ -4,13 +4,25 @@
     box-sizing: border-box;
   }
 
+:root{
+    --gray:slategray;
+    --blue:rgb(0,0,110);
+
+}
+
+body{
+    background-color:slategray;
+}
+
+/*Header*/
 header{
-    background-color: rgb(0, 0, 110);
+    background-color: var(--blue,rgb(0,0,110));
 }
 
 header h1{
     color: slategray;
-    display: inline
+    display: inline;
+    margin-left: 10px;
 }
 
 header a{
@@ -21,13 +33,13 @@ header a{
 
 header nav{
     margin-top: 15px;
-    float:right
+    float:right;
 }
 
 h1{
     font-size: 50px;
     font-family: fantasy;
-    font-weight:lighter
+    font-weight:lighter;
 
 }
 header nav ul li{
@@ -36,7 +48,35 @@ header nav ul li{
 header nav ul li a{
     margin: 10px;
 }
+/*Header End*/
 
-body{
-    background-color:slategray;
+section{
+    padding: 25px;
+}
+
+/*About me*/
+.about{
+    
+
+}
+/*projects*/
+.projects{
+    border: 5px solid black;
+    border-color:black;
+}
+.projects img{
+    width: 300px;
+    margin-bottom: 50px;
+
+}
+
+/*footer*/
+footer{
+    background-color: var(--blue,rgb(0,0,110));
+    color:var(--gray,slategray);
+    font-size: larger;
+}
+
+footer h3{
+    margin-left: 10px;
 }
