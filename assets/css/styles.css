@@ -93,25 +93,39 @@ section{
     text-align:center;
     font-size:larger;
 }
-
+/*pad images to center in div container*/
 .project-pic img{
+    padding: 20px;
     width: 100%;
 }
 
+.project-pic{
+    height:350px;
+}
+
+#run-buddy{
+    padding-top:50px;
+}
+
+#run-buddy-pic{
+    padding-bottom:80px;
+}
+#seo-pic{
+    padding-bottom:50px;
+}
+#box-pic{
+    width:300px;
+}
 .project-pic-first img{
     width: 600px;
 }
-/*
+
 .thumbnail:hover{
-    position:relative;
-    top:25px;
-    left:35px;
-    width:300px;
-    height:auto;
-    display:block;
-    z-index:999;
+    opacity: .7;
 }
-*/
+/*Projects end*/
+
+/*make responsive for mobile screen dimensions*/
 @media screen and (max-width: 768px) {
     main,
     nav {
