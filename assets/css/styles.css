@@ -16,7 +16,9 @@ body{
 
 /*Header*/
 header{
+    display:flex;
     background-color: var(--blue,rgb(0,0,110));
+    justify-content: space-between;
 }
 
 header h1{
@@ -34,7 +36,6 @@ header a{
 
 header nav{
     margin-top: 15px;
-    float:right;
 }
 
 h1{
@@ -56,29 +57,60 @@ section{
 }
 
 /*About me*/
-
 .about{
     display:flex;
     background-image: url('../images/bali.jpg');
     background-size:cover;
     background-position-y:center;
-
+    color:white;
 }
+
 .about img{
     display:flex;
-    width: 200px;
-}
-/*projects*/
-.projects{
-    border: 5px solid black;
-    border-color:black;
-    display: flex;
+    width: 450px;
 }
 
-.projects img{
-    width: 300px;
-    margin-bottom: 50px;
+/*projects*/
+.projects{
+    flex:4;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
 }
+
+.project-pic{
+    border-style:solid;
+    border-color:var(--blue);
+    border-width: 4px;
+    border-radius:5px;
+    margin:20px;
+    flex: 0 0 400px;
+}
+
+.project-pic{
+    text-align:center;
+}
+
+.project-pic img{
+    width:100%;
+}
+
+.thumbnail:hover{
+    position:relative;
+    top:25px;
+    left:35px;
+    width:300px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
 
 /*footer*/
 footer{
@@ -87,6 +119,3 @@ footer{
     font-size: larger;
 }
 
-footer h3{
-    margin-left: 10px;
-}
